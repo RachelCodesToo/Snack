@@ -1,12 +1,9 @@
-require "nokogiri"
-require "open-uri"
-
 class Snacks::Scraper 
     
     def get_page
-        user = CLI.new
+        user = Snacks::CLI.new
         choice = user.user_chooses_nut
-        get_from = NutsData.new
+        get_from = Snacks::NutsData.new
         doc = Nokogiri::HTML(open("https://nuts.com/nuts/#{get_from.nuts[choice]}"))
         doc
       end

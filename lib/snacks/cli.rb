@@ -23,13 +23,13 @@ class Snacks::CLI
     end 
 
     def user_chooses_nut 
-        print "\nChoose the list number of tbe nut that you're interested in: "
+        print "\nChoose the list number of the nut that you're interested in: "
         input = gets.chomp.to_i - 1
         input
     end  
 
     def show_data
-        get = Scraper.new
+        get = Snacks::Scraper.new
         get.about_nut_info
     end 
 

@@ -1,5 +1,8 @@
 require "bundler/setup"
-require "snacks"
-require_relative '../lib/snacks/cli'
-require_relative '../lib/snacks/nutsdata'
+# require "snacks"
+require "nokogiri"
+require "open-uri"
+require_relative '../lib/snacks/version'
 require_relative '../lib/snacks/scraper'
+require_relative '../lib/snacks/nutsdata'
+require_relative '../lib/snacks/cli'
