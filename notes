@@ -1,0 +1,12 @@
+Steps
+Execute files:
+1. User runs the bin file (./snacks)
+2. All code in the environment is loaded 
+3. The bin file instantiates a new Cli object and invokes the #call method on it 
+Main program runs:
+4. <Scrape> data from nuts.com
+5. transform data into objects
+6. main program runs and user is welcomed and shown data <snacklist>m
+7. User is prompted to select from the list of snack categories available 
+8. Based on user input, we show data about the Snack selected 
+9. User will select the snack and learn more about it's nutrition facts 
