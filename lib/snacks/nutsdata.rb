@@ -1,13 +1,18 @@
 class Snacks::NutsData
 
-    def nuts 
-        nuts = "almonds brazil-nuts cashews hazelnuts macadamia-nuts peanuts pecans pistachios".split.sort
-        nuts 
-    end 
-
+    def nuts
+        nuts = ["almonds", "brazilNuts", "cashews", "hazelnuts", "macadamiaNuts", "peanuts","pecans", "pistachios"]
+        nuts
+    end
+    
+    def formatted_nuts
+        nuts_form = nuts.collect do |nut|
+        nut.include("Nuts") ? nut.gsub("Nuts", " Nuts") : nut
+        end
+        nuts_form
+    end
+        
 end 
 
 
-this=Snacks::CLI.new
-this.call
 
