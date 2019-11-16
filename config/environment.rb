@@ -1,5 +1,5 @@
 require "bundler/setup"
-# require "snacks"
+#require "snacks"
 require "nokogiri"
 require "open-uri"
 require_relative '../lib/snacks/version'

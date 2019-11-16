@@ -16,7 +16,7 @@ class Snacks::CLI
       end
     
       def show_nuts_list
-        these = Snacks::NutsData.new #Snacks::NutData
+        these = Snacks::NutsData.new
         these.nuts.each.with_index(1) do |nut, index|
           puts "\n#{index}. #{nut.capitalize}"
         end
