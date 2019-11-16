@@ -5,11 +5,10 @@ class Snacks::CLI
         show_nuts_list
         show_data
         choose_another?
-        # goodbye
       end
     
       def intro 
-        puts "Hi, Welcome to Nuts!"
+        puts "Hi, Welcome to Nutipedia!"
         # sleep 2
         puts "Here is a list of some of the most common nuts!"
         # sleep 2
@@ -23,7 +22,7 @@ class Snacks::CLI
         # sleep 2
       end
     
-      def user_chooses_nut
+      def choice_of_nut
         while true
           print "\nChoose the list number of the nut that you're interested in: "
           input = gets.chomp.to_i - 1
@@ -46,15 +45,15 @@ class Snacks::CLI
       
       def choose_another?
         while true
-          print "\nWould you like to choose another nut variety to learn more about: (y/n) "
+          print "\nWould you like to choose another nut variety to learn more about (y/n) or 'exit':  "
           input = gets.chomp.downcase.to_s
           if input == "y" 
               show_nuts_list
               show_data
-          elsif input == "n"
+          elsif input == 'n' || input == 'exit'
               goodbye  
           else
-              puts "\nPlease choose (y/n)."
+              puts "\nPlease choose (y/n) or type 'exit'."
           end 
         end 
       end 
